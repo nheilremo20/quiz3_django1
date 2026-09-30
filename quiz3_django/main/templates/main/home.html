@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #eaf6ff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #0077b6, #48cae4);
+            color: white;
+            padding: 25px;
+            border-radius: 18px;
+            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 20px rgba(0, 119, 182, 0.2);
+        }
+
+        .header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        /* Student Card */
+        .student-card {
+            background: white;
+            border-left: 6px solid #00b4d8;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 5px 15px rgba(0, 119, 182, 0.12);
+            transition: 0.3s;
+        }
+
+        .student-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 119, 182, 0.2);
+        }
+
+        .student-info h2 {
+            color: #0077b6;
+            margin-bottom: 8px;
+            font-size: 21px;
+        }
+
+        .student-info p {
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .label {
+            color: #0096c7;
+            font-weight: bold;
+        }
+
+        /* Number */
+        .student-number {
+            background: #caf0f8;
+            color: #0077b6;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Button */
+        .view-btn {
+            background: #0096c7;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        .view-btn:hover {
+            background: #0077b6;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .student-card {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .student-number {
+                align-self: flex-end;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Student List</h1>
+        </div>
+
+        <div class="student-card">
+            <div class="student-info">
+                <h2>Juan Dela Cruz</h2>
+                <p><span class="label">Course:</span> BSIT</p>
+                <p><span class="label">Age:</span> 20</p>
+            </div>
+            <div class="student-number">01</div>
+        </div>
+
+        <div class="student-card">
+            <div class="student-info">
+                <h2>Maria Santos</h2>
+                <p><span class="label">Course:</span> BSIT</p>
+                <p><span class="label">Age:</span> 21</p>
+            </div>
+            <div class="student-number">02</div>
+        </div>
+
+        <div class="student-card">
+            <div class="student-info">
+                <h2>Pedro Reyes</h2>
+                <p><span class="label">Course:</span> BSIT</p>
+                <p><span class="label">Age:</span> 19</p>
+            </div>
+            <div class="student-number">03</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
